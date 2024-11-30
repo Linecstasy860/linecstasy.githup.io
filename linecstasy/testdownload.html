@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İndirme Sayfası</title>
+    <style>
+        /* Genel stil */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to top right, #FF007F, #FF4C00); /* Pembe'den kırmızıya giden gradyan */
+            color: white;
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Sayfa yüksekliğini tamamen alacak şekilde */
+            display: flex;
+            justify-content: center; /* Yatayda ortala */
+            align-items: center; /* Dikeyde ortala */
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Menü stili */
+        nav {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 15px 0;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+            margin-bottom: 30px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            background-color: #444;
+            padding: 12px 20px;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #ff4c00;
+            transform: scale(1.1); /* Hover efektinde büyüme */
+        }
+
+        /* İçerik alanı */
+        .content {
+            background-color: rgba(0, 0, 0, 0.7); /* Şeffaf koyu bir arka plan */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            max-width: 800px; /* İçeriğin genişliğini sınırladık */
+            margin-top: 80px; /* Menüden sonra üstten boşluk */
+        }
+
+        a {
+            display: inline-block;
+            background-color: #333;
+            color: white;
+            padding: 12px 25px;
+            margin: 15px 10px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 18px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Butonun altına gölge ekledik */
+        }
+
+        a:hover {
+            background-color: #ff4c00;
+            transform: scale(1.05); /* Buton hover olduğunda biraz büyüsün */
+        }
+
+        /* Butonlar arasındaki düzen */
+        .content h1 {
+            margin-bottom: 15px; /* Başlıklar arasındaki boşluğu ayarladık */
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="sayfa.html">Anasayfa</a></li>
+            <li><a href="#about">Hakkımızda</a></li>
+            <li><a href="#services">Hizmetlerimiz</a></li>
+            <li><a href="#contact">İletişim</a></li>
+            <li><a href="testdownload.html">İndirme Linkleri</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1>Spammer Zip İndir</h1>
+        <a href="https://drive.google.com/file/d/1gFEVtK7vP8ZudDqMiPzYdtrbvLdJG_xp/view?usp=drive_link" download="deneme">Spammer</a>
+        <br>
+        <h1>Musallat Exe İndir</h1>
+        <a href="https://drive.google.com/file/d/1N6EOxrMtWUJTlLQdtDBzWqGbTJmFnNCY/view?usp=drive_link" download="linecstasy.bat">Musallat Bat</a>
+        <br>
+        <h1>Hesap Makinesi 2024 İndir</h1>
+        <a href="https://drive.google.com/file/d/1vC39RJzR0Lf5JF0AePoCVG0ffwJ08iWm/view?usp=drive_link" download="hesapmakinesi2024">Hesap Makinesi</a>
+    </div>
+
+</body>
+</html>
